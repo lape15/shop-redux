@@ -1,0 +1,1 @@
+Built with react,redux,firebase,stripe
