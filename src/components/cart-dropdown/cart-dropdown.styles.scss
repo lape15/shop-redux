@@ -12,14 +12,35 @@
   z-index: 5;
 
   .cart-items {
-    height: 240px;
+    height: 550px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow-y: scroll;
+
+    scrollbar-color: rgba(0, 0, 0, 0.9) rgba(0, 0, 0, 0.3);
+    scrollbar-width: thin;
+  }
+
+  .cart-items::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+  }
+  .cart-items::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 6px;
+  }
+  .cart-items::-moz-scrollbar {
+    width: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+  }
+  .cart-items::-moz-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 6px;
   }
 
   button {
-    margin-top: 250px;
-    margin-left: 16px;
+    // margin-top: 150px;
   }
 }
